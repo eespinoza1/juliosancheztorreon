@@ -9,6 +9,15 @@
   <!-- Fuente elegante -->
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); // Reemplaza con tu ID de medición de GA4
+  </script>
+
   <style>
     body {
       font-family: 'Crimson Pro', serif;
@@ -151,6 +160,17 @@
       color: #333;
       margin-top: 40px;
       text-align: center;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #8b4513;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
@@ -166,7 +186,35 @@
       .logo-box {
         margin-bottom: 15px;
       }
+
     }
+    .footer-instagram {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-instagram a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #8b4513;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.footer-instagram a:hover {
+  text-decoration: underline;
+}
+
+.footer-instagram img {
+  width: 20px;
+  height: 20px;
+}
+
   </style>
 </head>
 <body>
@@ -241,9 +289,21 @@
       </div>
     </section>
 
-    <footer>
-      © 2025 - Concejal Moisés Somaza y Julio Sanchez Regalado.
-    </footer>
+    <!-- Footer -->
+  <!-- Footer -->
+<footer>
+  <p>© 2025 - Concejal Moisés Somaza y Julio Sánchez Regalado.</p>
+  <div class="footer-instagram">
+    <a href="https://www.instagram.com/somazamoises?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+      <img src="instagram.png" alt="Instagram Moisés">
+      @somazamoises
+    </a>
+    <a href="https://www.instagram.com/julsanchezrg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+      <img src="instagram.png" alt="Instagram Julio">
+      @julsanchezrg
+    </a>
+  </div>
+</footer>
   </div>
 
   <script>
