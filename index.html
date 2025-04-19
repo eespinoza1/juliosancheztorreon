@@ -25,9 +25,34 @@
       margin: 40px auto;
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
       border-radius: 8px;
+      position: relative;
     }
 
-    header, footer {
+    .header-logos {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .logo-box {
+      text-align: center;
+    }
+
+    .logo-box img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 5px;
+    }
+
+    .logo-box p {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: bold;
+      color: #5c3a0d;
+    }
+
+    header {
       text-align: center;
       margin-bottom: 20px;
     }
@@ -125,11 +150,21 @@
       font-weight: bold;
       color: #333;
       margin-top: 40px;
+      text-align: center;
     }
 
     @media (max-width: 600px) {
       .pergamino {
         padding: 20px;
+      }
+
+      .header-logos {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo-box {
+        margin-bottom: 15px;
       }
     }
   </style>
@@ -137,6 +172,19 @@
 <body>
 
   <div class="pergamino">
+    
+    <!-- Logos superiores -->
+    <div class="header-logos">
+      <div class="logo-box">
+        <img src="torreonsinfondo.png" alt="Logo Torreón">
+        <p>Torreón Los Cocos</p>
+      </div>
+      <div class="logo-box">
+        <img src="concejal.png" alt="Logo Concejal">
+        <p>Concejal Moisés Somaza</p>
+      </div>
+    </div>
+
     <header>
       <h1>El Torreón de Los Cocos</h1>
       <p>Un símbolo histórico y orgullo de Maracay</p>
@@ -191,11 +239,10 @@
         <p>¿Te gustó esta historia? Te invitamos a conocer también:</p>
         <a href="https://juliosanchez.vercel.app/">🦬 La historia del Toro de Maracay</a>
       </div>
-
     </section>
 
     <footer>
-      © 2025 - Consejal Moisés Somaza y Julio Sanchez Regalado
+      © 2025 - Concejal Moisés Somaza y Julio Sanchez Regalado.
     </footer>
   </div>
 
@@ -212,6 +259,5 @@
       }
     }
   </script>
-
 </body>
 </html>
